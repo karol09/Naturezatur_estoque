@@ -1,0 +1,388 @@
+ <!DOCTYPE html>
+  <html lang="">
+  	<head>
+  		<meta charset="utf-8">
+  		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  		<meta name="viewport" content="width=device-width, initial-scale=1">
+  		<title>Buscar dados</title>
+  
+  		
+  		<link href="css/estyle_1.css" rel="stylesheet" type="text/css">
+		<link href="css/style_2.css" rel="stylesheet" type="text/css">
+		<link href="css/alertas.css" rel="stylesheet" type="text/css">
+		<link href="css/botoes.css" rel="stylesheet" type="text/css">
+  	  		
+  		<link href="css/style.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="js/javascript.js" type="text/javascript"> </script>
+		<script src="js/btEfeito.js" type="text/javascript"> </script>
+		
+			
+<style type="text/css">
+		
+h2.section-title {
+	font-weight: bold;
+    font-size: 25px;
+    letter-spacing: 0px;
+    margin-bottom: 80px;
+	padding-bottom: 20px;
+	font-family: "Verdana", "COURIER", arial;
+}
+
+input{
+	
+	font-size: 45px;
+}
+
+
+
+p.section-description {
+	font-weight: lighter;
+	font-size: 15px;
+}
+
+h2.section-title + p {
+	margin-top: -80px;
+	margin-bottom: 35px;
+}	
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+}
+
+th, td {
+    text-align: left;
+    padding: 16px;
+    font-family: arial;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2
+}
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 18px;
+    transition: 0.4s;
+}
+
+.accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: gray;
+    float: right;
+    margin-left: 5px;
+}
+
+.acti:hover {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+.acti, .accordion:hover {
+    background-color: #CD8500; 
+}
+
+.panel {
+    padding: 0 18px;
+    display: none;
+	 background-color: white;
+    overflow: hidden;
+}
+
+								<div id="myModal" class="modal">
+									
+								  <div class="modal-header">
+								 
+								  <span class="close">&times;</span>
+									  <h2 class="">Estoque mínimo</h2>
+									</div>
+									
+									<?php
+									
+									
+									include('php/exibirSaidas.php');
+									
+									
+									?>
+									
+						</div>
+
+</style>
+  
+  
+ 
+  	</head>
+  	<body>
+
+  		<div class="section" style="background-color: #E0FFFF">
+		
+		
+		<div class="container">
+		
+		<div class="row" style="">
+		
+		<p style=""><img src="img/logo.png" alt="NaturezaTur" width= "310px" height= "80px" align="left"/></p>
+		
+		</div>
+		</div>
+		
+		<div class="row" style="padding-bottom: 0px;">
+		<div class="col-md-6 col-md-offset-3">
+		<div class="topnav" id="myTopnav">
+					  
+					  
+					  	  
+					  <a href="#"><button class="btn info">  </button></a>
+					  <a href="index.php" class="">Saídas</a>
+					  <a href="cadastro_entradas.php" class="">Entradas</a>
+					  <a href="cadastro_produto_1.php">Produtos</a>
+					  <a href= "exibicao.html" class= "active"> Opção 4</a>
+					  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+					<i class="fa fa-bars"></i>
+						</a>
+					  
+			</div>		
+			</div>
+			</div>
+			
+
+  			<div class="container">
+  				<div class="row" style="text-align: center; padding-top: 20px;">
+  					<div class="col-md-12 text-center">
+  						<h2 class="section-title">Verifique entradas, produtos e retiradas do estoque</h2>
+  						<p class="section-description"> Você pode filtrar saídas digitando o código do produto, uma data e/ou destino. Verificar entradas digitando o código e/ou a data
+						que deseja visualizar. E ainda pesquisar produtos cadastrados digitando seu código. </p>
+  					</div>
+					</div>
+					</div>
+					
+			<div class="container">
+			<div class="row" style="padding-top: 15px;">
+			<div class="col-md-7 col-md-offset-3">
+			
+			<button class="accordion"><b> Links de visualização rápida: </b></button>
+			
+			
+			<div class="panel">
+			<div class="row">
+			
+			
+			<table>		
+				<tr>			
+					
+					<td><a href="php/exibir.php"> <p>Saídas: Barco 01 </p></a></td>
+					<td><a href="php/exibir1.php"><p>Saídas: Barco 02 </p></a></td>
+					<td><a href="php/exibirDeck.php"><p>Saídas: DECK </p></a> </td>
+					
+				</tr>
+					
+				<tr>
+					
+					<td><a href="php/exibir2.php"><p>Saídas: Barco 04 </p></a></td>
+					<td><a href="php/exibir3.php"><p> Saídas: Barco 05</p> </a></td>
+					<td><a href="php/exibirRecepcao.php"><p> Saídas: Recepção </p> </a></td>
+							
+				</tr>
+						
+				<tr>
+					
+					<td><a href="php/exibir4.php"> <p>Todos os produtos </p> </a></td>
+					<td><a href="php/exibir5.php"> <p> Todas as entradas </p> </a></td>
+					<td><a href="php/exibirPessoal.php"> <p>Saídas: Pessoal </p> </a> </td>
+
+					
+					</tr>
+							
+			</table>
+			</div>
+			</div>
+			</div>
+			</div>
+			</div>
+	
+		
+<script type="text/javascript">
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+        this.classList.toggle("acti");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "block";
+        }
+    });
+}
+</script>							
+					<div id="myModal" class="modal">
+									
+								  <div class="modal-header">
+								 
+								  <span class="close">&times;</span>
+									  <h2 class="">Estoque mínimo</h2>
+									</div>
+									
+									<?php
+									
+									
+									include('php/exibirSaidas.php');
+									
+									
+									?>
+									
+						</div>
+  		
+
+						<div class="container">
+						<div class="row" style="padding-top: 30px">
+						<div class="co-md-8 col-md-offset-3">
+						<form action="php/exibirSaidas.php" method="post"> 
+						
+								<div class="row">
+								<div class="col-md-4 form-group">
+									<input class="form-control" autofocus name="identificador" placeholder="nome ou número do produto" type="text"/>
+								</div>
+								
+							
+								<div class="col-md-3 form-group">
+									<input id="dataAutomatica" class="form-control" name="data" type="date" value="" />
+								</div>
+								
+								<div class="col-md-3 form-group">
+									<select name="destino" class="form-control">
+
+									<option value="">--------</option>
+									 <option value="1">BARCO 01</option>
+									 <option value="2">BARCO 02</option>
+									 <option value="3" >BARCO 04</option>
+									 <option value="4" >BARCO 05</option>
+										 <option value="11" >DECK</option>
+										 	 <option value="12" >RECEPÇÃO</option>	
+											 <option value="13" >PESSOAL</option>
+									 
+								</select>
+								</div>
+								
+							
+								<div class="col-md-2 form-group col-md-offset-7">
+									<button class="btn btn-primary" id="myBtn" type="submit">pesquisar saídas </button>
+								
+								</div>
+								
+								
+							</div>
+							</form>
+							</div>
+							</div>
+							</div>
+							
+							<div id="myModal" class="modal">
+									
+								  <div class="modal-header">
+								 
+								  <span class="close">&times;</span>
+									  <h2 class="">Estoque mínimo</h2>
+									</div>
+									
+									<?php
+									
+									
+									include('php/exibirSaidas.php');
+									
+									
+									?>
+									
+						</div>
+						
+
+						<div class="container">
+						<div class="row" style="padding-top: 20px">
+						<div class="co-md-8 col-md-offset-3">
+						<form action="php/exibirProdutos.php" method="post"> 
+						
+								<div class="row">
+								<div class="col-md-4 form-group">
+									<input class="form-control" autofocus name="id" placeholder="nome ou número do produto" type="text"/>
+								</div>
+								
+								
+								<div class="col-md-4 form-group">
+									<button class="btn btn-primary" type="submit">pesquisar produtos</button>
+								
+								</div>
+								
+								
+							</div>
+							</form>
+							</div>
+							</div>
+							</div>
+							
+							<div class="container">
+						<div class="row" style="padding-top: 30px">
+						<div class="co-md-8 col-md-offset-3">
+						<form action="php/exibirEntradas.php" method="post"> 
+						
+								<div class="row">
+								<div class="col-md-4 form-group">
+									<input class="form-control" autofocus name="nome" placeholder="nome ou número do produto" type="text"/>
+								</div>
+								
+								<div class="col-md-3 form-group">
+									<input class="form-control" autofocus name="dia" placeholder="" type="date"/>
+								</div>
+								
+								
+								<div class="col-md-2 form-group">
+									<button class="btn btn-primary" type="submit">pesquisar entradas</button>
+								
+								</div>
+								
+								
+							</div>
+							</form>
+							</div>
+							</div>
+							</div>
+						
+				
+  				
+				
+			
+			
+			
+			</div>
+			
+			
+			<div style="background-color: ">
+					
+					<div class="row" style="font-family: Verdana; text-align: center">
+					
+					<div class="col-md-12">  <p> &#169; Nomad Theme. By: Free Bootstrap template. <a style="color: orangeRed;" href= "http://www.naturezatur.com.br/"> NaturezaTur. </a> 
+					
+					Design: <a style="color: orangeRed;" href="https://www.facebook.com/?sk=nf"> Ana Karolina Silva </a></p>
+					
+					
+					
+					</div>
+					</div>
+					</div>
+  
+
+  
+  		
+  	</body>
+  </html>
