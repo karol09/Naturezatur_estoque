@@ -134,7 +134,7 @@ h2.section-title + p {
   					<div class="col-md-12 text-center">
   						<h2 class="section-title">Registro de entrada de produtos</h2>
   						<p class="section-description">Digite o número identificador do produto e as outras informações abaixo para registrar a entrada de 
-						produtos no estoque.</p>
+						produtos no estoque. <b> OS PRODUTOS PRECISAM ESTAR CADASTRADOS ANTES DE REGISTRAR ENTRADAS. </b></p>
   					</div>
 					</div>
 					<div class="container">
