@@ -111,13 +111,13 @@ h2.section-title + p {
 								
 								<div class="row">
 								<div class="col-md-6 form-group">
-									<input class="form-control" id="" name="categoria" placeholder="categoria" type="text" required />
+									<input class="form-control" id="" name="categoria" placeholder="categoria" type="text"  />
 								</div>
 							</div>
 							
 							<div class="row">
 								<div class="col-md-6 form-group">
-									<input class="form-control" name="quantidade" placeholder="quantidade" type="number" min="1" max="200" value="0" required />
+									<input class="form-control" name="quantidade" placeholder="quantidade" type="number" min="0" max="200" value="0" required />
 								</div>
 							</div>
 							
