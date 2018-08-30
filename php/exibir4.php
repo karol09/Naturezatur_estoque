@@ -4,6 +4,12 @@
 
 <head> <title>Exibindo produtos do estoque...</title> 
 
+
+
+<link href="css/alertas.css" rel="stylesheet" type="text/css">
+<link href="css/estyle_1.css" rel="stylesheet" type="text/css">
+		
+		
 <style type="text/css">
 
 table {
@@ -39,10 +45,15 @@ tr:nth-child(even) {
 
 <body>
 
+<!--<h2><a href="..\index.php"> voltar para a página anterior. </a></h2>  <br/>-->
+
+
 <?php
 		
 			
 	include("..\conectarBd.php");
+	
+	
 				
 	$sql = "SELECT idProduto, nome, qtd_inicial from produto";
 	

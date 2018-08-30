@@ -8,7 +8,7 @@
   		<title>Cadastro de saídas</title>
   
   		
-			<link href="css/alertas.css" rel="stylesheet" type="text/css">
+		<link href="css/alertas.css" rel="stylesheet" type="text/css">
 		<link href="css/estyle_1.css" rel="stylesheet" type="text/css">
 		
 		<!--<link href="css/style_2.css" rel="stylesheet" type="text/css">

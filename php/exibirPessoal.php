@@ -37,6 +37,8 @@ tr:nth-child(even) {
 
 <body>
 
+<h2><a href="..\exibicao.html"> voltar para a página anterior. </a></h2>  <br/>
+
 <?php
 		
 			
@@ -52,7 +54,7 @@ tr:nth-child(even) {
 				
 				if($total == 0){
 					
-					echo "<b>Não Há retiradas PESSOAIS do estoque. </b>";
+					echo "<b>Não Há retiradas PESSOAIS do estoque. </b> <br/>";
 					echo "<meta HTTP-EQUIV='Refresh' CONTENT='5; URL= ../exibicao.html'>";
 					
 				}else{

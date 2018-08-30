@@ -35,6 +35,8 @@ tr:nth-child(even) {
 
 <body>
 
+<h2><a href="..\exibicao.html"> voltar para a página anterior. </a></h2>  <br/>
+
 <?php
 			
 			

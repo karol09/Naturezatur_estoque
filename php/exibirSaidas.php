@@ -35,6 +35,7 @@ tr:nth-child(even) {
 
 <!-- SELECT data, quantidade, responsavel, p.nome, s.nome, categoria FROM registro, produto as p, setor as s WHERE
  idProduto=fk_idProduto and categoria='bebida' and ID=fk_ID order by data desc -->
+<h2><a href="..\exibicao.html"> voltar para a página anterior. </a></h2>  <br/>
 
 <?php
 		
