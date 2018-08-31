@@ -72,7 +72,7 @@ h2.section-title + p {
 					  <a href="index.php" class="">Saídas</a>
 					  <a href="cadastro_entradas.php">Entradas</a>
 					  <a href="cadastro_produtos_1.php" class="active">Produtos</a>
-					  <a href="exibicao.html">Opção 4</a>
+					  <a href="exibicao.html">Filtrar registros</a>
 					  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
 					<i class="fa fa-bars"></i>
 						</a>

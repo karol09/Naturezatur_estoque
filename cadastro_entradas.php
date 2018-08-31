@@ -118,7 +118,7 @@ h2.section-title + p {
 					  <a href="index.php" class="">Saídas</a>
 					  <a href="cadastro_entradas.php" class="active">Entradas</a>
 					  <a href="cadastro_produto_1.php">Produtos</a>
-					  <a href="exibicao.html">Opção 4</a>
+					  <a href="exibicao.html">Filtrar registros</a>
 					  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
 					<i class="fa fa-bars"></i>
 						</a>
